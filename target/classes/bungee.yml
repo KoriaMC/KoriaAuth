@@ -1,0 +1,5 @@
+name: KoriaAuth
+version: 1.0.0
+main: fr.koriamc.auth.KoriaAuth
+author: KoriaMC
+description: Comptes et connexion des joueurs (login / register) pour le proxy KoriaMC (BungeeCord, Waterfall, FlameCord)

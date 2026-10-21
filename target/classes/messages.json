@@ -1,0 +1,102 @@
+{
+  "prefix": "&8[&6Koria&8] &r",
+  "general": {
+    "login-first": "{prefix}&cConnectez-vous d'abord.",
+    "already-logged": "{prefix}&7Vous êtes déjà connecté."
+  },
+  "register": {
+    "chat-reminder": "{prefix}&eBienvenue ! Choisissez un mot de passe : &f/{register} <mot de passe> <mot de passe>",
+    "already": "{prefix}&cCe pseudo est déjà inscrit.",
+    "mismatch": "{prefix}&cLes deux mots de passe ne sont pas identiques.",
+    "ip-limit": "{prefix}&cTrop de comptes ont été créés depuis votre connexion ({max} au plus).",
+    "done": "{prefix}&aCompte créé, bienvenue &f{joueur}&a !",
+    "done-title": "&6&lBienvenue !;;&eBon jeu sur KoriaMC"
+  },
+  "login": {
+    "chat-reminder": "{prefix}&eConnectez-vous : &f/{login} <mot de passe>",
+    "not-registered": "{prefix}&cVous n'avez pas encore de compte : &f/{register} <mot de passe> <mot de passe>",
+    "wrong": "{prefix}&cMot de passe incorrect ({essais} essai(s) restant(s)).",
+    "done": "{prefix}&aConnecté, bon jeu &f{joueur}&a !",
+    "done-title": "&6&lBon retour !;;&e{joueur}",
+    "forced": "{prefix}&aUn administrateur vous a connecté.",
+    "session": "{prefix}&aReconnecté automatiquement."
+  },
+  "password": {
+    "empty": "{prefix}&cEntrez un mot de passe.",
+    "spaces": "{prefix}&cLe mot de passe ne doit pas contenir d'espace.",
+    "too-short": "{prefix}&cMot de passe trop court ({min} caractères au moins).",
+    "too-long": "{prefix}&cMot de passe trop long ({max} caractères au plus).",
+    "forbidden": "{prefix}&cCe mot de passe est trop simple, choisissez-en un autre."
+  },
+  "change": {
+    "usage": "{prefix}&eUsage : &f/{commande} <ancien mot de passe> <nouveau mot de passe>",
+    "not-logged": "{prefix}&cConnectez-vous d'abord.",
+    "wrong": "{prefix}&cAncien mot de passe incorrect.",
+    "done": "{prefix}&aMot de passe changé."
+  },
+  "forgot": {
+    "disabled": "{prefix}&7Mot de passe oublié ? Contacte le staff sur notre &9Discord&7.",
+    "cooldown": "{prefix}&cUn code vient d'être envoyé, attends &f{secondes} s &cavant d'en redemander un.",
+    "error": "{prefix}&cImpossible d'envoyer le code pour le moment, réessaie plus tard ou contacte le staff.",
+    "no-email": "{prefix}&cAucun e-mail n'est lié à ton pseudo sur le site. Contacte le staff sur notre &9Discord&c.",
+    "sent-chat": [
+      "{prefix}&aUn code a été envoyé à &f{email} &a(valable {minutes} min).",
+      "{prefix}&eTape &f/{commande} <code>"
+    ],
+    "no-code": "{prefix}&cDemande d'abord un code (Mot de passe oublié).",
+    "expired": "{prefix}&cCe code a expiré, demandes-en un nouveau.",
+    "wrong-code": "{prefix}&cCode incorrect ({essais} essai(s) restant(s)).",
+    "too-many": "{prefix}&cTrop de codes incorrects, demandes-en un nouveau.",
+    "code-ok-chat": "{prefix}&aCode correct ! Choisis ton nouveau mot de passe : &f/{commande} <mot de passe> <mot de passe>",
+    "done": "{prefix}&aMot de passe changé, bon jeu &f{joueur}&a !",
+    "done-title": "&6&lMot de passe changé;;&eBon jeu {joueur}"
+  },
+  "kick": {
+    "timeout": "&cTemps écoulé.\n&7Reconnectez-vous et entrez votre mot de passe.",
+    "too-many-attempts": "&cTrop d'essais incorrects.\n&7Réessayez dans un moment.",
+    "name-case": "&cCe pseudo est inscrit sous la forme &f{pseudo}&c.\n&7Connectez-vous avec exactement ce pseudo.",
+    "already-online": "&cCe joueur est déjà connecté.",
+    "unregistered": "&eVotre compte a été supprimé par un administrateur.\n&7Reconnectez-vous pour en créer un nouveau.",
+    "no-auth-server": "&cServeur de connexion indisponible, réessayez plus tard."
+  },
+  "admin": {
+    "help": [
+      "{prefix}&6KoriaAuth &7- administration",
+      "&e/{commande} info <joueur> &7: compte d'un joueur",
+      "&e/{commande} unregister <joueur> &7: supprimer un compte (le joueur se réinscrira)",
+      "&e/{commande} forcelogin <joueur> &7: connecter un joueur sans mot de passe",
+      "&e/{commande} reload &7: recharger la configuration"
+    ],
+    "usage": "{prefix}&eUsage : &f/{commande} {action} <joueur>",
+    "unknown": "{prefix}&cAucun compte pour &f{joueur}&c.",
+    "offline": "{prefix}&c{joueur} n'est pas en ligne.",
+    "info": [
+      "{prefix}&6Compte de &f{joueur} &7({etat}&7)",
+      "&7Inscrit le &f{inscription} &7depuis &f{ip-inscription}",
+      "&7Dernière connexion : &f{derniere} &7depuis &f{ip}"
+    ],
+    "unregistered": "{prefix}&aCompte de &f{joueur} &asupprimé.",
+    "forced": "{prefix}&a{joueur} est connecté.",
+    "already-logged": "{prefix}&7{joueur} est déjà connecté.",
+    "reloaded": "{prefix}&aConfiguration rechargée ({comptes} compte(s)).",
+    "reload-problem": "{prefix}&c{probleme}"
+  },
+  "values": {
+    "offline": "&8hors ligne",
+    "logged": "&aconnecté",
+    "pending": "&een attente de connexion"
+  },
+  "mail": {
+    "sujet": "KoriaMC - ton code de réinitialisation : {code}",
+    "contenu": [
+      "<div style=\"font-family:Arial,sans-serif;max-width:480px;margin:auto;padding:24px;background:#3b2412;border-radius:14px;color:#fff1c8\">",
+      "<h2 style=\"color:#ffcc33;margin-top:0\">Mot de passe oublié</h2>",
+      "<p>Bonjour <b>{joueur}</b>,</p>",
+      "<p>Voici ton code pour choisir un nouveau mot de passe sur KoriaMC :</p>",
+      "<p style=\"font-size:32px;letter-spacing:8px;font-weight:bold;color:#ffcc33;text-align:center\">{code}</p>",
+      "<p>Tape-le dans l'écran du jeu. Il est valable {minutes} minutes.</p>",
+      "<p style=\"color:#c8a878;font-size:12px\">Tu n'as rien demandé ? Ignore ce message : ton mot de passe ne change pas.</p>",
+      "</div>"
+    ]
+  }
+}

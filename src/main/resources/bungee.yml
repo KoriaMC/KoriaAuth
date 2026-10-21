@@ -1,0 +1,5 @@
+name: KoriaAuth
+version: ${project.version}
+main: fr.koriamc.auth.KoriaAuth
+author: KoriaMC
+description: ${project.description}

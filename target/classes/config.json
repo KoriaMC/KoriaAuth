@@ -1,0 +1,88 @@
+{
+  "serveurs": {
+    "auth": "lobby",
+    "apres-connexion": ""
+  },
+  "mot-de-passe": {
+    "longueur-min": 6,
+    "longueur-max": 32,
+    "interdits": [
+      "123456",
+      "1234567",
+      "12345678",
+      "azerty",
+      "qwerty",
+      "motdepasse",
+      "password",
+      "koriamc"
+    ],
+    "iterations": 60000
+  },
+  "connexion": {
+    "delai-secondes": 90,
+    "essais-max": 5,
+    "session-minutes": 0,
+    "comptes-max-par-ip": 0,
+    "rappel-chat-secondes": 10,
+    "attente-lobby-secondes": 6
+  },
+  "oubli": {
+    "actif": false,
+    "code-minutes": 15,
+    "essais-code": 5,
+    "attente-entre-mails-secondes": 120,
+    "temps-sur-le-lobby-minutes": 10,
+    "base-azuriom": {
+      "hote": "localhost",
+      "port": 3306,
+      "base": "azuriom",
+      "utilisateur": "azuriom",
+      "mot-de-passe": "",
+      "table": "users",
+      "colonne-pseudo": "name",
+      "colonne-email": "email",
+      "ssl": false
+    },
+    "mail": {
+      "hote": "smtp.exemple.fr",
+      "port": 587,
+      "securite": "starttls",
+      "utilisateur": "no-reply@koriamc.fr",
+      "mot-de-passe": "",
+      "expediteur": "no-reply@koriamc.fr",
+      "nom-expediteur": "KoriaMC"
+    }
+  },
+  "commandes": {
+    "login": [
+      "login",
+      "l",
+      "log"
+    ],
+    "register": [
+      "register",
+      "reg"
+    ],
+    "changepassword": [
+      "changepassword",
+      "changepass",
+      "changermdp"
+    ],
+    "admin": {
+      "nom": "koriaauth",
+      "alias": [
+        "kauth"
+      ]
+    },
+    "oubli": [
+      "motdepasseoublie",
+      "mdpoublie",
+      "forgotpassword"
+    ]
+  },
+  "titres": {
+    "apparition": 5,
+    "duree": 40,
+    "disparition": 10
+  }
+}
